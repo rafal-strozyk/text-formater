@@ -1,0 +1,43 @@
+{
+  "name": "text-formater",
+  "displayName": "Text Formater",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:text-formater.textFormater"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "text-formater.textFormater",
+        "title": "Text Formater"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.0.1",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.75.0",
+    "@vscode/test-electron": "^2.2.2",
+    "eslint": "^8.33.0",
+    "glob": "^8.1.0",
+    "mocha": "^10.1.0",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "clipboardy": "^2.3.0"
+  }
+}
