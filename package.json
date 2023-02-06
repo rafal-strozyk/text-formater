@@ -19,6 +19,13 @@
         "command": "text-formater.textFormater",
         "title": "Text Formater"
       }
+    ],
+    "keybindings": [
+      {
+          "command": "text-formater.textFormater",
+          "key": "ctrl+shift+v",
+          "mac": "shift+cmd+v"
+      }
     ]
   },
   "scripts": {
